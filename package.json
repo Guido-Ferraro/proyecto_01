@@ -10,6 +10,7 @@
     "@types/node": "^12.20.14",
     "@types/react": "^17.0.9",
     "@types/react-dom": "^17.0.6",
+    "gh-pages": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -17,6 +18,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,5 +49,6 @@
     "eslint": "^7.27.0",
     "eslint-plugin-react": "^7.24.0",
     "typescript": "^4.3.2"
-  }
+  },
+  "homepage": "https://guido-ferraro.github.io/proyecto_01/"
 }
