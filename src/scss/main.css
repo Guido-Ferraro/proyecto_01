@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysansregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysansbold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysansitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysanslight-webfont.woff") format("woff");
+  font-weight: light;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: rooneysans;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  border: 1px solid #dcdcdc;
+  padding: 1em 1.5em 1em;
+  width: 100%;
+}
+
+.funding {
+  background-color: #424242;
+  color: white;
+  padding: 1em;
+  width: 100%;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-size: 1.125rem;
+}
+
+.funding::after {
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  left: calc(var(--progress) + (86.5% - var(--progress)) / 2);
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(66, 66, 66, 0);
+  border-top-color: #424242;
+  border-width: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.progress-bar {
+  margin-top: 0.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#ef5f3c), color-stop(#ef5f3c), to(#fafafa));
+  background: linear-gradient(to right, #ef5f3c, #ef5f3c var(--progress), #fafafa var(--progress));
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-bottom: 0;
+  height: 1rem;
+}
+
+p {
+  color: #828282;
+  padding-bottom: 1em;
+}
+
+.days-left b {
+  color: #ef5f3c;
+}
+
+.call-to-action {
+  line-height: 1.5em;
+}
+
+.donation-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.donation-label {
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.5em;
+}
+
+.donation-label * {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  border: 0 transparent;
+}
+
+.donation-label b {
+  padding: 0.75em 0.25em 0.75em 0.5em;
+  width: auto;
+  color: #828282;
+}
+
+.donation-label input {
+  font-weight: bold;
+  padding: 0.75em 0;
+  outline: 0;
+}
+
+.donation-button {
+  width: 100%;
+  margin-left: 0.5em;
+  color: white;
+  background-color: #1cbc2c;
+  font-size: 1.25rem;
+  border: 0;
+  border-radius: 3px;
+}
+
+.info {
+  color: #20a1d4;
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 0.5em 0em 0.25em;
+}
+
+button:hover,
+.info:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.info:hover {
+  text-decoration: underline;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 1em 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bottom-button {
+  background-color: #fafafa;
+  color: #777777;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  padding: 0.75em;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.left {
+  margin-right: 0.6em;
+}
+
+.right {
+  margin-left: 0.6em;
+}
+
+button,
+.wrapper {
+  -webkit-box-shadow: 0px 1px #dcdcdc;
+          box-shadow: 0px 1px #dcdcdc;
+}
+/*# sourceMappingURL=main.css.map */

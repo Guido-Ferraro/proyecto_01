@@ -1,25 +1,20 @@
-import React, { ReactElement } from "react";
+import React from "react";
+import {ReactElement as RE} from "react";
 
 interface FundingProp {
-	currentFunding: number;
+	currentFunding: number; 
 	requiredFunding: number;
 }
 
-/*const Funding: React.FC<FundingProp> = (prop) => {
-	return (
-		<div>
-			{`$${prop.requiredFunding - prop.currentFunding} still needed for this project`}
-		</div>
-	);
-};*/
-
-const Funding = (prop: FundingProp) => {
+const Funding = (prop: FundingProp):RE=> {
+	
+	const fundingLeft = prop.requiredFunding - prop.currentFunding < 0 ? 0 : prop.requiredFunding - prop.currentFunding;
+	
 	return(
-		<div>
-			{`$${prop.requiredFunding - prop.currentFunding} still needed for this project`}
+		<div className="funding">
+			<b>${Math.round(fundingLeft*100)/100}</b>&nbsp;still needed for this project
 		</div>
 	);
 };
-
 
 export default Funding;

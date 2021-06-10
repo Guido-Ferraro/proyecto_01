@@ -5,11 +5,10 @@ interface FundingProp {
 	requiredFunding: number;
 }
 
-const ProgressBar: React.FC<FundingProp> = (prop) => {
+const ProgressBar = (): React.ReactElement => {
+
 	return (
-		<div>
-			{`[progress bar div ${prop.currentFunding}/${prop.requiredFunding}]`}
-		</div>
+		<div className="progress-bar"></div>
 	);
 };
 

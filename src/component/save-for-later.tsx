@@ -1,8 +1,8 @@
 import React from "react";
 
-const SaveForLater: React.FC = () => {
+const SaveForLater = ():React.ReactElement => {
 	return (
-		<button type = "button" >Save for later</button>
+		<button type = "button" onClick={() => alert("Placeholder button")} className="bottom-button left"><b>Save for later</b></button>
 	);
 };
 

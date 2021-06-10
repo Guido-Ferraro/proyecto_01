@@ -4,12 +4,13 @@ interface CallToActionProp {
 	donorCount: number;
 }
 
-const CallToAction: React.FC<CallToActionProp> = (prop) => {
+const CallToAction = (prop: CallToActionProp):React.ReactElement => {
+
 	return (
-		<div>
-			{`Join the ${prop.donorCount} other donors who have already supported this project. Every dollar helps.`}
-		</div>
+		<p className="call-to-action">Join the <b>{prop.donorCount}</b> other donors who have already supported this project. Every dollar helps.
+		</p>
 	);
+	
 };
 
 export default CallToAction;

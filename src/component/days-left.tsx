@@ -1,15 +1,16 @@
 import React from "react";
 
 interface DaysLeftProp {
-	currentDay: number,
-	lastDay: number
+	currentDay: number;
+	lastDay: number;
 }
 
-const DaysLeft: React.FC<DaysLeftProp> = (prop) => {
+const DaysLeft = (prop: DaysLeftProp):React.ReactElement => {
+
 	return (
-		<div>
-			{`Only ${prop.lastDay - prop.currentDay} days left to fund this project.`}
-		</div>
+		<p className="days-left">
+			<b>{`Only ${prop.lastDay - prop.currentDay} days left`}</b> to fund this project.
+		</p>
 	);
 };
 

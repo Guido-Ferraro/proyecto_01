@@ -1,8 +1,8 @@
 import React from "react";
 
-const DonattionInfo: React.FC = () => {
+const DonattionInfo = ():React.ReactElement => {
 	return (
-		<a href="">Why give $50?</a>
+		<i onClick={() => alert("Placeholder link")} className="info" >Why give $50?</i>
 	);
 };
 

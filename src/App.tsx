@@ -1,8 +1,7 @@
 import React from "react";
-import "./App.css";
 import Component from "./component/component";
 
-const App: React.FC = () => {
+const App: React.FC = ():React.ReactElement => {
 	return (
 		<Component />
 	);

@@ -1,11 +1,11 @@
 {
 "funding": {
-    "current": 333,
+    "met": 333,
     "required": 500
     },
 "day": {
     "current": 27,
     "last": 30
 },
-"donorCount": 47
+"donors": 42
 }

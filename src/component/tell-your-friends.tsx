@@ -1,8 +1,8 @@
 import React from "react";
 
-const TellYourFriends: React.FC = () => {
+const TellYourFriends = ():React.ReactElement => {
 	return (
-		<button type="button">Tell your friends</button>
+		<button type="button" onClick={() => alert("Placeholder button")}className="bottom-button right"><b>Tell your friends</b></button>
 	);
 };
 

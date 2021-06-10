@@ -1,0 +1,45 @@
+//variables
+$background-gray: #424242;
+$orange: #ef5f3c;
+$green: #1cbc2c;
+$text-gray: #828282;
+$cyan: #20a1d4;
+$background-button: #fafafa;
+$text-button: #777777;
+$border-gray: #dcdcdc;
+
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysansregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysansbold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysansitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "rooneysans";
+  src: url("./fonts/rooneysanslight-webfont.woff") format("woff");
+  font-weight: light;
+  font-style: normal;
+}
+
+//resets
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: rooneysans;
+}
